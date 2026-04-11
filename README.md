@@ -1,6 +1,6 @@
-# ML Jobs predictions in Kazakhstan - salary prediction
+# Python related Jobs predictions in Kazakhstan - salary prediction
 
-Analysis of 1000+ Data Science/ML/AI job postings from hh.kz  
+Analysis of 1000+ Data Science/ML/AI/Python/DevOps etc. job postings from hh.kz  
 with an interactive salary prediction app based on tech stack
 
 **[Live Demo](#)** · **[Dataset](#)**
