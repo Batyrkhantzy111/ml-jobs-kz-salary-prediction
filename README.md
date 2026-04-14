@@ -1,18 +1,29 @@
-# Python related Jobs predictions in Kazakhstan - salary prediction
+# KZ IT JobScope - IT job market analysis in Kazakhstan
 
-Analysis of 1000+ Data Science/ML/AI/Python/DevOps etc. job postings from hh.kz  
-with an interactive salary prediction app based on tech stack
+Analysis of 1000+ IT job postings from hh.kz across Kazakhstan,
+with exploratory data analysis, skill extraction, an interactive salary prediction app based on tech stack, and role features
 
 **[Live Demo](#)** · **[Dataset](#)**
 
 ---
+
+## Overview
+This project analyzes vacancies from hh.kz to explore the Kazakhstan IT job market
+
+The pipeline includes:
+- data collection from hh.kz
+- data cleaning and preprocessing
+- exploratory data analysis
+- skill extraction from vacancy descriptions
+- salary prediction using machine learning
+- interactive Streamlit app for market insights and salary estimation
 
 ## Stack
 `Python` `pandas` `scikit-learn` `XGBoost` `SHAP`  
 `Plotly` `Streamlit` `BeautifulSoup` `requests`
 
 ## Results *(will be updated)*
-- **2342 vacancies** collected from hh.kz (april 2026)
+- **1177 (already processed) vacancies** collected from hh.kz (april 2026)
 - Best model: R², MAE
 - Top salary predictors:
 
@@ -21,7 +32,9 @@ with an interactive salary prediction app based on tech stack
 pip install -r requirements.txt
 
 # Collect data
-notebooks/01_extract_data.ipynb
+notebooks/00_extract_data.ipynb
+# Explore and
+notebooks/01_eda.ipynb
 
 # Run app (will be then)
 streamlit run app.py
@@ -30,12 +43,14 @@ streamlit run app.py
 ## Project Structure
 ```
 ├── notebooks/
-│   ├── 01_extract_data.ipynb
-│   ├── 02_eda.ipynb
-│   ├── 03_nlp.ipynb
-│   └── 04_model.ipynb
-├── data/raw/vacancies.csv
-├── models/salary_model
+│   ├── 00_extract_data.ipynb
+│   ├── 01_eda.ipynb
+│   ├── 02_nlp.ipynb
+│   └── 03_model.ipynb
+├── data/
+│   ├──raw/raw_vacancies.csv
+│   └──processed/vacancies_clean.csv
+├── models/salary_model.pkl
 ├── app.py
 └── requirements.txt
 ```
