@@ -3,7 +3,7 @@
 Analysis of 1000+ IT job postings from hh.kz across Kazakhstan,
 with exploratory data analysis, skill extraction, an interactive salary prediction app based on tech stack, and role features
 
-**[Live Demo](#)** · **[Dataset](#)**
+**[Live Demo](#)** · **[Dataset](data/processed/vacancies_clean_2026-04-14.csv)**
 
 ---
 
@@ -20,7 +20,7 @@ The pipeline includes:
 
 ## Stack
 `Python` `pandas` `scikit-learn` `XGBoost` `SHAP`  
-`Plotly` `Streamlit` `BeautifulSoup` `requests`
+`Plotly` `kaleido` `Streamlit` `BeautifulSoup` `requests`
 
 ## Results *(will be updated)*
 - **1177 (already processed) vacancies** collected from hh.kz (april 2026)
@@ -48,8 +48,16 @@ streamlit run app.py
 │   ├── 02_nlp.ipynb
 │   └── 03_model.ipynb
 ├── data/
-│   ├──raw/raw_vacancies.csv
-│   └──processed/vacancies_clean.csv
+│ ├── raw/
+│ │ └── raw_vacancies.csv
+│ ├── processed/
+│ │ └── vacancies_clean.csv
+│ └── vizualizations/
+│ ├── viz_1.png
+│ ├── viz_1.html
+│ ├── viz_2.png
+│ ├── viz_2.html
+│ └── ...
 ├── models/salary_model.pkl
 ├── app.py
 └── requirements.txt
