@@ -52,6 +52,7 @@ streamlit run app.py
 │ │ └── raw_vacancies.csv
 │ ├── processed/
 │ │ └── vacancies_clean.csv
+│ │ └── features_nlp.csv
 │ └── vizualizations/
 │ ├── viz_1.png
 │ ├── viz_1.html

@@ -4,3 +4,4 @@ xmltodict
 pandas
 plotly
 kaleido
+sklearn
