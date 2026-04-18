@@ -1,7 +1,13 @@
+jupyter
 requests
 beautifulsoup4
 xmltodict
 pandas
 plotly
 kaleido
-sklearn
+shap
+scikit-learn
+xgboost
+numpy
+joblib
+streamlit
