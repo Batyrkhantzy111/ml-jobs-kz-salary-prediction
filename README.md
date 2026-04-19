@@ -3,7 +3,7 @@
 Analysis of 1000+ IT job postings from hh.kz across Kazakhstan,
 with exploratory data analysis, skill extraction, an interactive salary prediction app based on tech stack, and role features
 
-**[Live Demo](#)** · **[Dataset](https://raw.githubusercontent.com/Batyrkhantzy111/ml-jobs-kz-salary-prediction/refs/heads/main/data/processed/vacancies_clean_2026-04-14.csv)**
+**[Live Demo](https://bmxebcvwajyhtyepttw3fv.streamlit.app/)** · **[Dataset](https://raw.githubusercontent.com/Batyrkhantzy111/ml-jobs-kz-salary-prediction/refs/heads/main/data/processed/vacancies_clean_2026-04-14.csv)**
 
 ---
 
@@ -62,7 +62,7 @@ Because of these limitations, a relatively low R² is expected here. In this pro
 ```bash
 pip install -r requirements.txt
 
-# Run app (will be then)
+# Run app
 streamlit run app.py
 ```
 
